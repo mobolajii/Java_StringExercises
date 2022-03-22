@@ -5,41 +5,30 @@ import java.lang.*;
 
 class StringExercises{
 
-    static int[]checkIP(String s) {
-        StringTokenizer st = new StringTokenizer(s, ".");
-        ArrayList<String> elements = new ArrayList<String>();
-        int[]newD = new int[2];
-
-        for (int i = 0; i < st.countTokens(); i++) {
-            elements.add(st.nextToken());
+    static int[] checkIP(String s) {
+        if(s == null)
+            return null;
+        int[] arr = new int[4];
+        StringTokenizer tokens = new StringTokenizer(s,".");
+        if(tokens.countTokens() != 4)
+            return null;
+        int j = 0;
+        while(tokens.hasMoreTokens()){
+            String u = tokens.nextToken();
+            if(u.length() == 0)
+                return null;
+            for (int i = 0; i < u.length(); i++) {
+                if(!Character.isLetterOrDigit(i))
+                    return null;
+            }
+            arr[j] = Integer.parseInt(u);
+            if(arr[j] >255)
+                return null;
+            j++;
         }
-        for (int i = 0; i < elements.size(); i++) {
-
-            String oneS = elements.get(0);
-            String twoS = elements.get(1);
-            //String threeS = elements.get(2);
-           // String fourS = elements.get(3);
-
-
-            int oneI = Integer.parseInt(oneS);
-            int twoI = Integer.parseInt(twoS);
-           // int threeI = Integer.parseInt(threeS);
-            //int fourI = Integer.parseInt(fourS);
-
-            if(oneI<0 && oneI>255)return null;
-            if(twoI<0 && twoI>255)return null;
-           // if(threeI<0 && threeI>255)return null;
-            //if(fourI<0 && fourI>255)return null;
-
-            newD = new int[]{oneI +'.', twoI+'.', /*threeI+'.'fourI*/ };
-
-
-        }
-
-
-
-            return newD;
+        return arr;
     }
+
 
 
 
