@@ -6,7 +6,6 @@ import java.util.regex.Pattern;
 public class Extract {
 
     //extracts the substring in brackets
-
     static String extract(String s){
        String brackets = "\\[(.*?)\\]";
 
