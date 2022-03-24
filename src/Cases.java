@@ -11,7 +11,6 @@ public class Cases {
             }
             sb.append(c);
         }
-
         return sb.toString();
     }
 }
