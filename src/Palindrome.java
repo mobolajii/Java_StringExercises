@@ -1,6 +1,5 @@
 public class Palindrome {
-    //returns true if String is a palindrome
-
+    //returns true if String is a palindrom
     static boolean palindrome(String s){
         StringBuilder sb = new StringBuilder(s);
         String rev = sb.reverse().toString();
