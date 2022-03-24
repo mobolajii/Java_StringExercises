@@ -1,5 +1,6 @@
 
-import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class Extract {
@@ -7,18 +8,16 @@ public class Extract {
     //extracts the substring in brackets
 
     static String extract(String s){
-        for(int i=0; i<s.length(); i++){
-            s = s.substring(s.indexOf("[") +1);
-            s = s.substring(0, s.indexOf("]"));
-        }
+       String brackets = "\\[(.*?)\\]";
 
-        return s;
+       Pattern pattern = Pattern.compile(brackets);
+       Matcher matcher = pattern.matcher(s);
+
+       while (matcher.find()){
+           System.out.print("Extracts the Strings in brackets: " + matcher.group(1) + " ");
+       }
+       return "";
     }
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        System.out.println(extract(s));
-    }
 
 }

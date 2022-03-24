@@ -9,7 +9,6 @@ class StringExercises{
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
 
-/*
         System.out.println("Does it contain the word? " + ContainsWord.containsWord(s));
         System.out.println("How many vowels are in the first String? " + CountVowels.countVowels(s));
         System.out.println("Deletes all the consonants in the first String: " + DeleteConsonants.deleteConsonants(s));
@@ -29,9 +28,9 @@ class StringExercises{
             System.out.print(info[i]);
         }
 
-        System.out.println("");
- */
-        System.out.println("Extract the String in the brackets " + Extract.extract(s));
+        System.out.println();
+
+        System.out.println( Extract.extract(s));
 
 
 
