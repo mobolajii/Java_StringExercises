@@ -9,7 +9,6 @@ public class Cases {
             }else if(Character.isUpperCase(c)){
                 c = Character.toLowerCase(c);
             }
-
             sb.append(c);
         }
 
