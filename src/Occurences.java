@@ -9,7 +9,6 @@ public class Occurences {
      */
 
     static char occurence(String s){
-
         HashMap<Character, Integer>elements = new HashMap<Character, Integer>();
 
         for(int i=0; i<s.length(); i++) {
