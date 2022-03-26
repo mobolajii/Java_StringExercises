@@ -21,6 +21,7 @@ class StringExercises{
         System.out.println("Change the cases into their opposite cases: " + Cases.cases(s));
         System.out.println("Is the first String a palindrome? " + Palindrome.palindrome(s));
         System.out.println("Does the given character appear twice in the first String? " + Twice.twice(s));
+        System.out.println("What character appears the most in the first String? " + Occurences.occurence(s));
 
         String[]info = Tokenize.tokenize(s);
         System.out.println("Return the tokenized String back below: ");
@@ -31,9 +32,6 @@ class StringExercises{
         System.out.println();
 
         System.out.println( Extract.extract(s));
-
-
-
 
 
     }
