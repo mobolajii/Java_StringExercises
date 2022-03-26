@@ -6,8 +6,6 @@ public class ContainsWord {
         System.out.println("Give in a word: ");
         Scanner sc = new Scanner(System.in);
         String word = sc.nextLine();
-
-        if(s.contains(word))return true;
-        return false;
+        return s.contains(word);
     }
 }
