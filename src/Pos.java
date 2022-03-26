@@ -1,6 +1,6 @@
 public class Pos {
 
-    //returns true if 'a' appears at two positions and 2 characters from each other apart
+    //returns true if 'a' appears at two positions and is a character apart from each other
     static boolean pos(String s){
         for(int i=0; i<s.length(); i++){
             if(s.charAt(i) == 'a'){
