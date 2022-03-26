@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Equal {
@@ -5,8 +6,8 @@ public class Equal {
     static boolean equal(String s){
         System.out.println("Give in a word: ");
         Scanner sc = new Scanner(System.in);
-        String b =  sc.nextLine();
-        if(s.equals(b))return true;
-        return false;
+        String word = sc.nextLine();
+        return s.equals(word);
+
     }
 }
