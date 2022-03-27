@@ -5,7 +5,9 @@ public class Pos {
         for(int i=0; i<s.length(); i++){
             if(s.charAt(i) == 'a'){
                 for(int j=i+1; j<s.length(); j++){
-                    if(s.charAt(j)=='a')return true;
+                    if(s.charAt(j) =='a'){
+                        return true;
+                    }
                 }
             }
         }

@@ -6,8 +6,9 @@ public class Equal {
     static boolean equal(String s){
         System.out.println("Give in a word: ");
         Scanner sc = new Scanner(System.in);
-        String word = sc.nextLine();
-        return s.equals(word);
 
+        String word = sc.nextLine();
+
+        return s.equals(word);
     }
 }
