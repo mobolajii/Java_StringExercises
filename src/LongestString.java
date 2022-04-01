@@ -1,25 +1,24 @@
 import java.util.Scanner;
 
 public class LongestString {
+    //returns the longest word
+    static String longestWord(String s){
+        String[]data = s.split(" ");
+        String length = " ";
 
-        static String longestString(String s){
-            String[]data = s.split(" ");
-
-            String longest = " ";
-            for(int i=0; i<data.length; i++){
-                if(data[i].length() >longest.length()){
-                    longest = data[i];
-                }
+        for (int i=0; i<data.length; i++){
+            if(data[i].length()>length.length()){
+                length = data[i];
             }
-            return longest;
         }
+        return length;
+    }
 
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            String s = sc.nextLine();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
 
-            System.out.println(longestString(s));
-        }
-
+        System.out.println(longestWord(s));
+    }
 
 }
