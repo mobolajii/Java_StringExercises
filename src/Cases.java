@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Cases {
-
     static String cases(String s){
         StringBuilder sb = new StringBuilder();
         for (int i=0; i<s.length(); i++){
