@@ -4,34 +4,36 @@ import java.util.StringTokenizer;
 
 public class Tokenizer {
 
-    static void tokenizer(String s){
+    static String tokenizer(String s){
         StringTokenizer st = new StringTokenizer(s, " ");
-        ArrayList<String>elements = new ArrayList<String>();
-
+        ArrayList<String>elements = new ArrayList<>();
 
         while(st.hasMoreTokens()){
             elements.add(st.nextToken());
         }
 
+        String a = "";
+        String b ="";
+        String c="";
+        for (int i=0; i<elements.size(); i++){
+           a = elements.get(0);
+           b = elements.get(1);
+           c = elements.get(2);
 
-        for(int i=0; i< elements.size(); i++ ){
-            String a = elements.get(0);
-            String b = elements.get(1);
-            String c = elements.get(2);
-
-
-            System.out.println(a.charAt(0) + "." + b.charAt(0) + "." + c +".");
-            break;
 
         }
 
-
+        return a.charAt(0) + "." + b.charAt(0) + "." + c + ".";
     }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
+        System.out.println();
 
-        tokenizer(s);
+        System.out.println(tokenizer(s));
     }
+
+
 }
