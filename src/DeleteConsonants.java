@@ -7,7 +7,6 @@ public class DeleteConsonants {
         String consonants = "[^aeiouAEIOU]";
 
         return s.replaceAll(consonants, "");
-
     }
 
     public static void main(String[] args) {
